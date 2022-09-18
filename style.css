@@ -35,12 +35,13 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .teams, .courses, .Social, .contact, .btns, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
+.Social .soc-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -305,6 +306,10 @@ section .title::after{
 
 /* skills section styling */
 
+/* #skills{
+    background-color: #222;
+} */
+
 .skills .title::after{
     content: "what i know";
 }
@@ -441,7 +446,70 @@ section .title::after{
     background: crimson!important;
 }
 
-/* contact section styling */
+/* course udemy section styling */
+.courses .title::after{
+    content: "certificate";
+}
+.courses .carousel .card{
+    background: #c4c3d0;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.courses .carousel .card:hover{
+    background: crimson;
+}
+.courses .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.courses .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.courses .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.courses .carousel .card img{
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    border: 3px solid crimson;
+    transition: all 0.3s ease;
+}
+.courses .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+/* contact section styling */ 
 .contact .title::after{
     content: "get in touch";
 }
@@ -678,3 +746,107 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+ /* social section styling  */
+.Social, .teams{
+    color:#fff;
+    background: #111;
+}
+.Social .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.Social .title::after{
+    background: #111;
+    content: "Works";
+}
+.Social .soc-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.Social .soc-content .card:hover{
+    background: crimson;
+}
+.Social .soc-content .card .box{
+    transition: all 0.3s ease;
+}
+.Social .soc-content .card:hover .box{
+    transform: scale(1.05);
+}
+.Social .soc-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.Social .soc-content .card:hover i{
+    color: #fff;
+}
+.Social .soc-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+/* button */
+
+/* .btns {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #ff0b0b, #ff4545);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  } */
+
+  .btns {
+    background: #111;
+    background-image: -webkit-linear-gradient(top, #ff0b0b, #ff4545);
+    background-image: -moz-linear-gradient(top, #111, #111);
+    background-image: -ms-linear-gradient(top, #111, #111);
+    background-image: -o-linear-gradient(top, #111, #111);
+    background-image: linear-gradient(to bottom, #111, #111);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* .btns:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  } */
+
+  .btns:hover {
+    background: #222;
+    background-image: -webkit-linear-gradient(top, #222, #222);
+    background-image: -moz-linear-gradient(top, #222, #222);
+    background-image: -ms-linear-gradient(top, #222, #222);
+    background-image: -o-linear-gradient(top, #222, #222);
+    background-image: linear-gradient(to bottom, #222, #222);
+    text-decoration: none;
+  }
