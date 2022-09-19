@@ -48,6 +48,13 @@ $(document).ready(function(){
         loop: true
     });
 
+    var typed = new Typed(".typing-3", {
+        strings: ["Easy Recipes ER"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
