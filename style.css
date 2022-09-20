@@ -35,13 +35,14 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .youtube, .services, .skills, .teams, .courses, .Social, .contact, .btns, footer{
+.about, .youtube, .services, .skills, .hobbi, .teams, .courses, .Social, .contact, .btns, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .youtube .you-content,
 .services .serv-content,
 .skills .skills-content,
+.hobbi .hob-content,
 .Social .soc-content,
 .contact .contact-content{
     display: flex;
@@ -289,6 +290,55 @@ section .title1::after{
     color: crimson;
     background: none;
 }
+
+/* hobbi section styling */
+.hobbi, .teams{
+    color:#fff;
+    background: #111;
+}
+.hobbi .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.hobbi .title::after,
+.teams .title::after{
+    background: #111;
+    content: "Hobbi";
+}
+.hobbi .hob-content .card{
+    width: calc(50% - 10px);
+    margin-top: 10px;
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.hobbi .hob-content .card:hover{
+    background: crimson;
+}
+
+.hobbi .hob-content .card .box{
+    transition: all 0.3s ease;
+}
+.hobbi .hob-content .card:hover .box{
+    transform: scale(1.05);
+}
+.hobbi .hob-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.hobbi .hob-content .card:hover i{
+    color: #fff;
+}
+.hobbi .hob-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
 
 /* services section styling */
 .services, .teams{
