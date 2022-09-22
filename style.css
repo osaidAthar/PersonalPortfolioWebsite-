@@ -156,6 +156,28 @@ section .title1::after{
 .navbar .menu li a:hover{
     color: crimson;
 }
+.navbar .menu li ul{
+    position: absolute;
+    /* right: 0; */
+    width: 200px;
+    margin-top: 15px;
+    display: none;
+}
+.navbar .menu li ul li{
+    width: 100%;
+    margin-top: 15px;
+    background: fixed;
+    border-top: 1px;
+}
+.navbar .menu li:focus-within > ul,
+.navbar .menu li:hover > ul{
+    display: initial;
+}
+.navbar.sticky li ul{
+    padding: 15px 0;
+    background: crimson;
+}
+
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
@@ -306,7 +328,7 @@ section .title1::after{
     content: "Hobbi";
 }
 .hobbi .hob-content .card{
-    width: calc(50% - 10px);
+    width: calc(33% - 10px);
     margin-top: 10px;
     background: #222;
     text-align: center;
@@ -795,6 +817,12 @@ footer span a:hover{
         font-size: 20px;
     }
     .services .serv-content .card{
+        width: 100%;
+    }
+    .hobbi .hob-content .card{
+        width: 100%;
+    }
+    .Social .soc-content .card{
         width: 100%;
     }
 }
