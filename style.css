@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .youtube, .services, .skills, .hobbi, .teams, .courses, .Social, .contact, .btns, footer{
+.about, .youtube, .services, .skills, .hobbi, .teams, .courses, .company, .addver, .Social, .contact, .btns, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -492,7 +492,7 @@ section .title1::after{
 .teams .title::after{
     content: "who with me";
 }
-.teams .carousel .card{
+.teams .carousel1 .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -500,25 +500,25 @@ section .title1::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.teams .carousel1 .card:hover{
     background: crimson;
 }
-.teams .carousel .card .box{
+.teams .carousel1 .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.teams .carousel1 .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.teams .carousel1 .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.teams .carousel1 .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -526,7 +526,7 @@ section .title1::after{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.teams .carousel1 .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -590,6 +590,141 @@ section .title1::after{
     transition: all 0.3s ease;
 }
 .courses .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+/* company udemy section styling */
+.company .title::after{
+    content: "Joine";
+}
+.company .carousel .card{
+    background: #05be93;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.company .carousel .card:hover{
+    background: crimson;
+}
+.company .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.company .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.company .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.company .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid crimson;
+    transition: all 0.3s ease;
+}
+.company .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+/* Add udemy section styling */
+.addver, .teams{
+    color:#fff;
+    background: #111;
+}
+.addver .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.addver .title::after{
+    background: #111;
+    content: "Product";
+}
+.addver .carousel1 .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.addver .carousel1 .card:hover{
+    background: crimson;
+}
+.addver .carousel1 .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.addver .carousel1 .card:hover .box{
+    transform: scale(1.05);
+}
+.addver .carousel1 .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.addver .carousel1 .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid crimson;
+    transition: all 0.3s ease;
+}
+.addver .carousel1 .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
