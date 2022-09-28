@@ -193,7 +193,8 @@ section .title1::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: #333;
+    /* background: crimson; */
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -619,7 +620,7 @@ section .title1::after{
     content: "Joine";
 }
 .company .carousel .card{
-    background: #05be93;
+    background: #14a3b0;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -887,7 +888,8 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        /* background: #111; */
+        background: crimson;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
