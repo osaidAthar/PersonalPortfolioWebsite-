@@ -620,7 +620,8 @@ section .title1::after{
     content: "Joine";
 }
 .company .carousel .card{
-    background: #14a3b0;
+    /* background: #14a3b0; 91b014 */
+    background: linear-gradient(50deg,#14a3b0,#333);
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -646,10 +647,10 @@ section .title1::after{
     margin: 10px 0 7px 0;
 }
 .company .carousel .card img{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 300px;
     object-fit: cover;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border: 3px solid crimson;
     transition: all 0.3s ease;
 }
