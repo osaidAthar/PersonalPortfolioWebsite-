@@ -690,7 +690,7 @@ section .title1::after{
 }
 .addver .title::after{
     background: #111;
-    content: "Product";
+    content: "by";
 }
 .addver .carousel1 .card{
     background: #222;
