@@ -619,7 +619,7 @@ section .title1::after{
 .company .title::after{
     content: "Joine";
 }
-.company .carousel .card{
+.company .carousel1 .card{
     /* background: #14a3b0; 91b014 */
     background: linear-gradient(50deg,#14a3b0,#333);
     border-radius: 6px;
@@ -628,25 +628,25 @@ section .title1::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.company .carousel .card:hover{
+.company .carousel1 .card:hover{
     background: crimson;
 }
-.company .carousel .card .box{
+.company .carousel1 .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.company .carousel .card:hover .box{
+.company .carousel1 .card:hover .box{
     transform: scale(1.05);
 }
-.company .carousel .card .text{
+.company .carousel1 .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.company .carousel .card img{
+.company .carousel1 .card img{
     height: 200px;
     width: 300px;
     object-fit: cover;
@@ -654,7 +654,7 @@ section .title1::after{
     border: 3px solid crimson;
     transition: all 0.3s ease;
 }
-.company .carousel .card:hover img{
+.company .carousel1 .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -692,7 +692,7 @@ section .title1::after{
     background: #111;
     content: "by";
 }
-.addver .carousel1 .card{
+.addver .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -700,25 +700,25 @@ section .title1::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.addver .carousel1 .card:hover{
+.addver .carousel .card:hover{
     background: crimson;
 }
-.addver .carousel1 .card .box{
+.addver .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.addver .carousel1 .card:hover .box{
+.addver .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.addver .carousel1 .card .text{
+.addver .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.addver .carousel1 .card img{
+.addver .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -726,7 +726,7 @@ section .title1::after{
     border: 3px solid crimson;
     transition: all 0.3s ease;
 }
-.addver .carousel1 .card:hover img{
+.addver .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
